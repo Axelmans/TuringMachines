@@ -1,0 +1,52 @@
+//LOAD AN EXAMPLE TO TRY
+//then load an input and click play
+
+//Syntax:
+
+//-------CONFIGURATION
+name: ZeroesThenOnes
+init: q0
+accept: qAccept
+
+//-------DELTA FUNCTION:
+// < = left
+// > = right
+// - = hold
+// use underscore for blank cells
+
+//States and symbols are case-sensitive
+q0, 0
+q1, X, >
+
+q0, X
+q0, X, >
+
+q0, 1
+qReject
+
+q1, 1
+q2, X, >
+
+q1, X
+q1, X, >
+
+q1, 0
+qReject
+
+q2, _
+qBack, _, <
+
+qBack, 0
+qBack, 0, <
+
+qBack, 1
+qBack, 1, <
+
+qBack, X
+qBack, X, <
+
+qBack, _
+q0, _, >
+
+//Load your code and click COMPILE.
+//or load an example (top-right).
