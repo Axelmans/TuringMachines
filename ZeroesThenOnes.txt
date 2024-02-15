@@ -22,7 +22,10 @@ q0, X
 q0, X, >
 
 q0, 1
-qReject
+qReject, 1, -
+
+q0, _
+qAccept, _, -
 
 q1, 1
 q2, X, >
@@ -31,7 +34,19 @@ q1, X
 q1, X, >
 
 q1, 0
-qReject
+q1, 0, >
+
+q1, _
+qReject, _, -
+
+q2, 0
+q2, 0, >
+
+q2, 1
+q2, 1, >
+
+q2, X
+q2, X, >
 
 q2, _
 qBack, _, <
